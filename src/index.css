@@ -80,12 +80,22 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground font-body antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
+  }
+
+  /* Anchor-linked sections sit under the fixed navbar; offset the scroll target so headings
+     don't land hidden behind it. */
+  section[id] {
+    scroll-margin-top: 5rem;
   }
 }
 
