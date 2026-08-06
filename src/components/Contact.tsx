@@ -39,8 +39,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold mb-1">Email</div>
-                  <a href="mailto:hello@arcklabs.com" className="text-muted-foreground hover:text-google-blue transition-colors">
-                    hello@arcklabs.com
+                  <a href="mailto:arcklabs101@gmail.com" className="text-muted-foreground hover:text-google-blue transition-colors">
+                    arcklabs101@gmail.com
                   </a>
                 </div>
               </div>
@@ -51,9 +51,14 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold mb-1">Phone / WhatsApp</div>
-                  <a href="tel:+1234567890" className="text-muted-foreground hover:text-google-green transition-colors">
-                    +1 (234) 567-890
-                  </a>
+                  <div className="flex flex-col text-muted-foreground">
+                    <a href="tel:+254705186317" className="hover:text-google-green transition-colors">
+                      +254 705 186 317
+                    </a>
+                    <a href="tel:+254703990199" className="hover:text-google-green transition-colors">
+                      +254 703 990 199
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -64,15 +69,15 @@ const Contact = () => {
                 <div>
                   <div className="font-semibold mb-1">Location</div>
                   <p className="text-muted-foreground">
-                    Innovation Hub, Tech District<br />
-                    Remote & On-site Services Available
+                    Nairobi, Kenya<br />
+                    Remote &amp; on-site across Kenya
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="mt-8 p-6 bg-background border border-google-blue/20 rounded-2xl">
-              <h4 className="font-semibold mb-3">Business Hours</h4>
+              <h4 className="font-semibold mb-3">Business Hours (EAT)</h4>
               <div className="space-y-2 text-sm text-muted-foreground">
                 <div className="flex justify-between">
                   <span>Monday - Friday</span>

@@ -17,7 +17,32 @@ export default {
         heading: ['Space Grotesk', 'system-ui', 'sans-serif'],
         body: ['Inter', 'system-ui', 'sans-serif'],
       },
+      // Fluid type scale (clamp-based) so headings resize smoothly across viewports instead of
+      // jumping at each `md:`/`lg:` breakpoint. Named by role, not size, so usage stays consistent
+      // as the design system grows.
+      fontSize: {
+        display: ["clamp(2.75rem, 2.1rem + 3vw, 5.5rem)", { lineHeight: "1.05", letterSpacing: "-0.02em", fontWeight: "700" }],
+        headline: ["clamp(2rem, 1.7rem + 1.5vw, 3rem)", { lineHeight: "1.15", letterSpacing: "-0.01em", fontWeight: "700" }],
+        title: ["1.375rem", { lineHeight: "1.35", fontWeight: "600" }],
+        "body-lg": ["clamp(1.125rem, 1.05rem + 0.35vw, 1.375rem)", { lineHeight: "1.6" }],
+        body: ["1rem", { lineHeight: "1.7" }],
+        small: ["0.875rem", { lineHeight: "1.5" }],
+      },
+      boxShadow: {
+        sm: "var(--shadow-sm)",
+        md: "var(--shadow-md)",
+        lg: "var(--shadow-lg)",
+      },
+      transitionTimingFunction: {
+        "out-expo": "cubic-bezier(0.16, 1, 0.3, 1)",
+      },
+      transitionDuration: {
+        fast: "150ms",
+        base: "300ms",
+        slow: "600ms",
+      },
       colors: {
+        "surface-raised": "hsl(var(--surface-raised))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
