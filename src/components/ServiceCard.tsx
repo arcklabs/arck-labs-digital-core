@@ -21,18 +21,18 @@ const ServiceCard = ({ category, index }: ServiceCardProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      className={`group bg-card border border-${category.color}/20 rounded-2xl p-8 hover:border-${category.color}/50 transition-all duration-300 hover:shadow-xl hover:shadow-${category.color}/10`}
+      className={`group bg-card border border-${category.color}/20 rounded-2xl p-8 hover:border-${category.color}/50 hover:shadow-lg transition-all duration-base ease-out-expo`}
     >
       <div className="flex items-center gap-4 mb-6">
-        <div className={`w-16 h-16 bg-${category.color}/10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform`}>
+        <div className={`w-16 h-16 bg-${category.color}/10 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-base ease-out-expo`}>
           <Icon className={`w-8 h-8 text-${category.color}`} />
         </div>
-        <h3 className="text-2xl font-bold">{category.title}</h3>
+        <h3 className="text-title">{category.title}</h3>
       </div>
 
       <ul className="space-y-3">
         {category.services.map((service, idx) => (
-          <li key={idx} className="flex items-start gap-3 text-muted-foreground group-hover:text-foreground transition-colors">
+          <li key={idx} className="flex items-start gap-3 text-body text-muted-foreground group-hover:text-foreground transition-colors">
             <Check className={`w-5 h-5 text-${category.color} mt-0.5 flex-shrink-0`} />
             <span>{service}</span>
           </li>
