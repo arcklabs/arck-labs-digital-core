@@ -32,7 +32,6 @@ const plannedPrograms = [
   { name: "AI & Machine Learning", duration: "10 weeks", color: "google-yellow" },
   { name: "Digital Marketing Pro", duration: "6 weeks", color: "google-green" },
   { name: "Mobile App Development", duration: "12 weeks", color: "google-blue" },
-  { name: "Photography & Video Editing", duration: "8 weeks", color: "google-red" },
 ];
 
 const Academy = () => {
