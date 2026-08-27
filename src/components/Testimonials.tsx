@@ -24,13 +24,6 @@ const Testimonials = () => {
       rating: 5,
       color: "google-green",
     },
-    {
-      name: "David Okonkwo",
-      role: "Academy Graduate",
-      content: "The bootcamp changed my career trajectory. I'm now a professional web developer thanks to Arck Labs.",
-      rating: 5,
-      color: "google-yellow",
-    },
   ];
 
   return (
