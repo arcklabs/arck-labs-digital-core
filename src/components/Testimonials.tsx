@@ -4,22 +4,22 @@ import { Star, Quote } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Ashley Nelima",
       role: "CEO, TechStart Inc",
       content: "Arck Labs transformed our digital presence completely. Their AI solutions increased our efficiency by 300%.",
       rating: 5,
       color: "google-blue",
     },
     {
-      name: "Michael Chen",
-      role: "Founder, Creative Studio",
+      name: "Daniel Leterewa",
+      role: "Public Relations, Creative Studio",
       content: "The team's creativity and technical expertise are unmatched. They delivered beyond our expectations.",
       rating: 5,
       color: "google-red",
     },
     {
-      name: "Emily Rodriguez",
-      role: "Product Manager, FinTech Co",
+      name: "Tony Kibos",
+      role: "CEO, Ketrucko Logistics",
       content: "Outstanding work on our mobile app. The UI/UX design is intuitive and beautiful.",
       rating: 5,
       color: "google-green",
